@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ClassMapAppFX.jnlp">
+  <information>
+    <title>ClassMap</title>
+    <vendor>ClassMap Inc.</vendor>
+    <description>ClassMapAppFX</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ClassMapAppFX.jar" size="189703" download="eager" />
+    <jar href="bcprov-jdk15on-1.48.jar" size="2318161" download="eager" />
+    <jar href="commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="commons-io-2.4.jar" size="185140" download="eager" />
+    <jar href="commons-lang-2.6.jar" size="284220" download="eager" />
+    <jar href="commons-lang3-3.2.1.jar" size="385091" download="eager" />
+    <jar href="commons-logging-1.1.1.jar" size="60031" download="eager" />
+    <jar href="gson-2.2.2.jar" size="189285" download="eager" />
+    <jar href="hsqldb.jar" size="1467326" download="eager" />
+    <jar href="httpasyncclient-4.0.2.jar" size="157851" download="eager" />
+    <jar href="httpclient-4.5.jar" size="727567" download="eager" />
+    <jar href="httpcore-4.4.4.jar" size="326724" download="eager" />
+    <jar href="httpmime-4.3.6.jar" size="37272" download="eager" />
+    <jar href="jackcess-2.1.3.jar" size="817491" download="eager" />
+    <jar href="json-20151123.jar" size="48224" download="eager" />
+    <jar href="json-simple-1.1.1.jar" size="23737" download="eager" />
+    <jar href="learningstudio-java-1.0.0.jar" size="53101" download="eager" />
+    <jar href="log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="mysql-connector-java-5.1.38-bin.jar" size="983914" download="eager" />
+    <jar href="ucanaccess-3.0.3.jar" size="325546" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.ClassMap"  name="ClassMapAppFX" />
+  <update check="background"/>
+</jnlp>

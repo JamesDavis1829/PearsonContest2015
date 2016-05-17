@@ -1,0 +1,24 @@
+Node                                    			No. Of Votes        
+
+Class Node: Biology                     			7                   
+Plant                                   			2                   
+Plantae                                 			2                   
+multicellular                           			2                   
+Animal                                  			1                   
+Protista                                			1                   
+Fern Life Cycle                         			1                   
+Human Life Cycle                        			1                   
+jkjkl                                   			1                   
+Science                                 			1                   
+Mitosis                                 			0                   
+Meiosis                                 			0                   
+Physical Environmental Factors          			0                   
+Biotic Environmental Factors            			0                   
+
+Topic Nodes :                           			No. Of Children     
+
+Cell Structure and Function             			3                   
+Six Kingdoms                            			2                   
+Genetics                                			2                   
+Life Cycle Patterns                     			2                   
+Ecology                                 			2                   

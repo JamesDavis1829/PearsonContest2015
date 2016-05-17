@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:id="root" alignment="CENTER" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="821.0">
+      <children>
+            <Pane fx:id="nodeStage" layoutY="80.0" prefHeight="457.0" prefWidth="821.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0">
+               <children>
+                   <Pane fx:id="newNodeStage2" onMouseDragged="#nodeDragMouseDragged" onMousePressed="#nodeDragMousePressed" prefHeight="457.0" prefWidth="821.0" />
+                   <Pane fx:id="newNodeStage3" onMouseDragged="#nodeDragMouseDragged" onMousePressed="#nodeDragMousePressed" prefHeight="457.0" prefWidth="821.0" />
+                  <Pane fx:id="newNodeStage" onMouseDragged="#nodeDragMouseDragged" onMousePressed="#nodeDragMousePressed" prefHeight="457.0" prefWidth="821.0" />
+
+               </children></Pane>
+            <MenuBar id="mainmenu" layoutY="-3.0" prefHeight="30.0" prefWidth="821.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu id="toolbar-item" mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#drawWorld" style="-fx-text-fill: black;" text="Load ClassMap" />
+                  </items>
+                </Menu>
+                <Menu id="toolbar-item" mnemonicParsing="false" text="Teacher">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#drawTeacherPanel" style="-fx-text-fill: black;" text="Teacher Panel" />
+                      <MenuItem mnemonicParsing="false" onAction="#getAnalytics" style="-fx-text-fill: black;" text="Get Analytics" />
+                  </items>
+                </Menu>
+                <Menu id="toolbar-item" mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" style="-fx-text-fill: black;" text="How To Use" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          <ToolBar id="toolbar" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="821.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+              <items>
+                  <MenuButton id="menu-button" mnemonicParsing="false" stylesheets="@../Cobra.css" text="Create Node">
+                      <items>
+                          <MenuItem mnemonicParsing="false" onAction="#createTextNode" style="-fx-text-fill: black;" text="Create Text Node" />
+                          <MenuItem mnemonicParsing="false" onAction="#createImageNodeURL" style="-fx-text-fill: black;" text="Create Image Node from URL" />
+                          <MenuItem mnemonicParsing="false" onAction="#createImageNodeFile" style="-fx-text-fill: black;" text="Create Image Node from File" />
+                          <MenuItem mnemonicParsing="false" onAction="#createVideoNode" style="-fx-text-fill: black;" text="Create YouTube Node" />
+                          <MenuItem mnemonicParsing="false" onAction="#createTopicNode" style="-fx-text-fill: black;" text="Create Topic Node (Teacher)" />
+                      </items>
+                  </MenuButton>
+
+                  <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="false" disable="false" mnemonicParsing="false" onAction="#showHome" text="Public" textAlignment="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#hideNodes" text="Home" />
+                  <Button mnemonicParsing="false" onAction="#showNew" text="What's New" />
+
+                  <MenuButton id="menu-button" mnemonicParsing="false" stylesheets="@../Cobra.css" text="Topic">
+                      <items>
+                          <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                              <content>
+                                  <Accordion fx:id="topicMenuAccordion" />
+                              </content>
+                          </CustomMenuItem>
+                      </items>
+                  </MenuButton>
+              </items>
+          </ToolBar>
+            <ScrollPane fx:id="sidePane" fitToWidth="true" layoutY="82.0" prefHeight="425.0" prefWidth="231.0" style="-fx-background-color: #FFFFFF;" visible="false" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+              <content>
+                
+              </content>
+            </ScrollPane>
+            <Pane layoutY="507.0" prefHeight="30.0" prefWidth="821.0" style="-fx-background-color: #303F9F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label fx:id="welcomeText" layoutX="14.0" layoutY="6.0" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="cardPane" layoutX="371.0" layoutY="80.0" prefHeight="425.0" prefWidth="450.0" style="-fx-background-color: rgb(66,95,156);" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="-466.0" AnchorPane.topAnchor="82.0" />
+
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

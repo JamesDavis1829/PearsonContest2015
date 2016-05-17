@@ -1,0 +1,168 @@
+    /*CLASSMAP BACKGROUND*/
+.root {
+    -fx-background-color: rgb(245,249,252);
+}
+/*END CLASSMAP BACKGROUND*/
+
+/*MENU BUTTON*/
+.button{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: rgb(66,95,156);
+    -fx-font-size: 10pt;
+    -fx-effect: none;
+}
+
+.button:hover{
+    -fx-background-color: rgb(233,234,237);
+}
+
+#menu-button{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: rgb(66,95,156);
+    -fx-effect: none;
+}
+
+#menu-button .label {
+    -fx-text-fill: rgb(66,95,156);
+    -fx-font-size: 10pt;
+}
+
+#menu-button:hover{
+    -fx-background-color: rgb(233,234,237);
+}
+
+.label{
+    -fx-text-fill: white;
+    -fx-font-size: 10pt;
+}
+
+.menu-item{
+    -fx-background-color: white;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover{
+    -fx-background-color: rgb(233,234,237);
+}
+/*END MENU BUTTON*/
+
+/*TOOLBAR*/
+#toolbar{
+    -fx-background-color: #303F9F;
+}
+
+#toolbar-item{
+    -fx-background-color: #1A237E;
+}
+
+#toolbar-item:hover{
+    -fx-background-color: #303F9F;
+}
+/*END TOOLBAR*/
+
+/*LOGIN SCREEN*/
+.login-button{
+    -fx-background-color: rgb(0, 126, 229);
+    -fx-text-fill: #ffffff;
+    -fx-padding: 1px 25px;
+    -fx-effect: none;
+}
+
+.login-button:hover{
+    -fx-background-color: #303F9F;
+}
+
+/*.login-button:selected{*/
+/*-fx-background-color: white;*/
+/*-fx-text-fill: black;*/
+/*}*/
+
+.signup{
+    -fx-text-fill: rgb(115, 121, 127);
+    -fx-underline: true;
+}
+
+#signup-label{
+    -fx-text-fill: rgb(0, 126, 229);
+    -fx-font-size: 10pt;
+}
+
+.signup:hover{
+    -fx-text-fill: #303F9F;
+}
+/*END LOGIN SCREEN*/
+
+/*ALERT DIALOG BOX*/
+.alert-dialog .button{
+    -fx-background-color: rgb(0, 126, 229);
+    -fx-text-fill: #ffffff;
+    -fx-padding: 1px 25px;
+    -fx-effect: none;
+}
+
+.alert-dialog .button:hover{
+    -fx-background-color: #303F9F;
+}
+/*END ALERT DIALOG BOX*/
+
+/*FLASHCARD STYLING*/
+
+#contentLabel{
+    -fx-text-fill: white;
+    -fx-font-family: Georgia;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-padding: 10 10;
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+    -fx-translate-y: 20px;
+    -fx-alignment: center;
+}
+
+#descrLabel, #defLabel{
+    -fx-text-fill: white;
+    -fx-font-family: Georgia;
+    -fx-padding: 5 10;
+    -fx-font-size: 15px;
+    -fx-font-weight: 800;
+}
+
+/*END FLASHCARD STYLING*/
+
+/*OTHER*/
+#mainmenu {
+    -fx-background-color: #1A237E;
+}
+
+.numberOfVotes{
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 20;
+    -fx-fill: #1A237E;   /*changes color of the number on the upvote*/
+    -fx-stroke: #1A237E; /*changes color of the number on the upvote*/
+}
+
+.namePlate{
+    -fx-fill: dodgerblue;
+    -fx-stroke: dodgerblue;
+}
+
+.youtubeNode{
+    -fx-stroke: rgb(187,0,0);
+    -fx-fill: rgb(187,0,0);
+}
+
+.imgNode{
+    -fx-fill: forestgreen;
+    -fx-stroke: forestgreen;
+}
+
+.node-box{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.up-vote{
+    -fx-font: 20 arial;
+    -fx-text-fill: dodgerblue;
+}
+/*END OTHER*/
